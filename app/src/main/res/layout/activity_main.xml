@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundlist"
+    android:id="@+id/mainLayout"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/ButtonJoin"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="257dp"
+        android:layout_height="57dp"
+        android:backgroundTint="#CDB592"
+        android:fontFamily="sans-serif-smallcaps"
+        android:onClick="home"
+        android:text="Войти"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/white"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.663" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/registory"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="257dp"
+        android:layout_height="57dp"
+        android:backgroundTint="#CDB592"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Регистрация"
+        android:onClick="registory"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/white"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.81" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/login"
+        android:layout_width="257dp"
+        android:layout_height="57dp"
+        android:backgroundTint="#CDB592"
+        android:ems="10"
+        android:hint="Введите почту"
+
+        android:inputType="phone"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.394" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/password"
+        android:layout_width="257dp"
+        android:layout_height="57dp"
+        android:backgroundTint="#CDB592"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Введите пароль"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.523" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
